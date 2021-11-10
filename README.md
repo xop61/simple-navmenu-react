@@ -1,4 +1,4 @@
-# simple-navmenu-react
+# Nav menu React
 
 
 ## Detail
