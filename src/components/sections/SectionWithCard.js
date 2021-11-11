@@ -42,6 +42,9 @@ const SectionBody = styled.div`
         width: 100%;
         margin-top: 5rem;
     }
+    ${Media.md} {
+        margin-top: 1rem;
+    }
 `;
 
 
@@ -57,7 +60,7 @@ const CardBody = styled.div`
 
 const ImgMain = styled.img`
     width: 100%;
-    max-width: 597px;
+    max-width: 770px;
     max-height: 480px;
     object-fit: cover;
     ${Media.xl} {
@@ -66,12 +69,15 @@ const ImgMain = styled.img`
         margin-right: 0;
         margin-left: auto;
     }
+    ${Media.md} {
+        max-width: 340px;
+    }
 `;
 
 const Card = styled.div`
     z-index: 5;
     position: absolute;
-    left: 41%;
+    left: 43%;
     top: 2rem;
     ${Media.xl} {
         left: 0;
@@ -91,7 +97,10 @@ const CardMain = styled.div`
         padding: 36px;
         max-width: 220px;
     }
-    
+    ${Media.md} {
+        padding: 25px;
+        max-width: 150px;
+    }
 `;
 const CardImg = styled.img`
     display: block;
@@ -116,7 +125,6 @@ export default function SectionWithCard() {
     return (
         <SectionCardContent>
             <SectionBody>
-
                 <ScrollAnimation animateIn="fadeInUp" >
                     <H4>NATURAL BORN LEADERS</H4>
                 </ScrollAnimation>

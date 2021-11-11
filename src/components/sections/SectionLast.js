@@ -1,14 +1,18 @@
 import styled from "styled-components"
 import Container from "./Container";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Media from "../global/Media";
 
 const Section = styled.div`
     background-size: cover;
     background-image: url(https://nimmobay.com/wp-content/uploads/2020/12/CTA-image-mountain-1620x1080.png);
     background-repeat: no-repeat;
-    padding-bottom: 13rem;
+    padding-bottom: 10rem;
     margin-top: -18rem;
     position: relative;
+    ${Media.md} {
+        padding-bottom: 4rem;
+    }
 `;
 
 const H2 = styled.h2`
@@ -19,6 +23,9 @@ const H2 = styled.h2`
     font-style: normal;
     letter-spacing: 4px;
     font-weight: 100;
+    ${Media.md} {
+        font-size: 1.5rem;
+    }
 `;
 
 const P = styled.p`
@@ -32,6 +39,9 @@ const P = styled.p`
     margin-top: 0;
     margin: 0 0 20px;
     max-width: 760px;
+    ${Media.md} {
+        font-size: 1rem;
+    }
 `;
 
 const Link = styled.a`
@@ -70,6 +80,9 @@ const Div = styled.div`
 `;
 const DivContent = styled.div`
     padding-top: 25rem;
+    ${Media.md} {
+        padding-top: 16rem;
+    }
 `;
 export default function SectionLast() {
     return (

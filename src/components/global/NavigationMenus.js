@@ -49,7 +49,7 @@ const StyledLink = styled.div`
 
     ${Media.md} {   
         padding: 0.5rem 1rem;
-        font-size: 2rem
+        font-size: 1.5rem;
     }
 `;
 
@@ -62,8 +62,8 @@ const CloseToggle = styled.button`
     color: #fff;
     padding: 0.75rem;
     display: flex;
-    place - items: center;
-    font - size: 2rem;
+    place-items: center;
+    font-size: 1.5rem;
     cursor: pointer;
     z-index: 2;
 `;

@@ -9,6 +9,9 @@ const CFooter = styled.footer`
     justify-content: center;
     flex-direction: column;
     padding-bottom: 2rem;
+    ${Media.md} {
+        padding-bottom: 4rem;
+    }
 `;
 
 const FooterLink = styled(Link)`
@@ -55,6 +58,7 @@ const Copyrigtht = styled.div`
     ${Media.md} {
         margin-right: 1rem;
         margin-left: 1rem;
+        flex-wrap: wrap;
     }
 `;
 

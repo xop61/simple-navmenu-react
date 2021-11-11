@@ -37,6 +37,7 @@ const Video = styled.video`
     ${Media.md} {
         min-height: 240px;
         padding: 5rem 0;
+        padding-top: 0;
     }
 `;
 

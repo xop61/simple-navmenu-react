@@ -55,6 +55,7 @@ const P = styled.p`
     margin-left: auto;
     ${Media.md} {
         text-align: left;
+        font-size: 1rem;
     }
 `;
 

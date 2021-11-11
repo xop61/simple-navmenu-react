@@ -172,12 +172,14 @@ const P = styled.p`
     
     font-family: Roboto,sans-serif;
     margin: 0 0 20px;
+    width: calc(100% - 3rem);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.7em;
     font-style: normal;
     margin-top: 0;
     margin-bottom: 1rem;
+    color: #666;
     ${MediaMin.sm} {
         font-size: 1.125rem;
         font-style: normal;

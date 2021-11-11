@@ -1,13 +1,10 @@
 import Vimeo from "@u-wave/react-vimeo";
 import BookNowButton from "./BookNowButton";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Container from "./Container";
 import Media from "../global/Media";
 import { FaRegPlayCircle } from "react-icons/fa";
-import { bounceInUp } from 'react-animations';
 import ScrollAnimation from 'react-animate-on-scroll';
-
-const bounceAnimation = keyframes`${bounceInUp}`;
 
 const HomePageBannerWrapper = styled.section`
   width: 100%;
@@ -39,14 +36,12 @@ const Text = styled.p`
   font-size: 1.125rem;
   line-height: 1.75;
   color: #fff;
-  animation: 1s ${bounceAnimation};
 `;
 
 const BannerText = styled.div`
   margin-top: 4rem;
   display: flex;
   justify-content: flex-end;
-  animation: 1s ${bounceAnimation};
 `;
 const HomeTileImage = styled.img`
   max-width: 400px;
