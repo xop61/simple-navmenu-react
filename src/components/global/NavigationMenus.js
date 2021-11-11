@@ -4,6 +4,7 @@ import styled from "styled-components";
 import logoImage from "../../images/logo.png";
 import NavigationMenuData from '../data/NavigationMenuData'
 import { useState } from "react";
+import Media from "./Media";
 
 const StyledMenu = styled.div`
   position: fixed;
@@ -17,7 +18,7 @@ const StyledMenu = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  z-index: 2;
+  z-index: 3;
 `;
 
 const NavMenuLogo = styled.div`
@@ -28,33 +29,28 @@ const NavMenuLogo = styled.div`
 
 const NavMenuTitle = styled(Link)`
     color: #eee;
-    font-family: Roboto, sans - serif;
+    font-family: Roboto, sans-serif;
     text-decoration: none;
 `;
 
 const StyledLink = styled.div`
-color: #eee;
-text-decoration: none;
-padding: 0.5rem 10.5rem;
-font-size: clamp(2rem, 2vw, 3vw);
-font-family: Roboto, sans - serif;
-transition: 0.2s all ease -in -out;
+    color: #eee;
+    text-decoration: none;
+    padding: 0.5rem 10.5rem;
+    font-size: clamp(2rem, 2vw, 3vw);
+    font-family: Roboto, sans-serif;
+    transition: 0.2s all ease -in -out;
 
-user-select: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
-//   &:hover {
-//     transition: 0.2s all ease-in-out;
-//     color: orangered;
-//   }
-
-@media (max-width: 767px) {   
-    padding: 0.5rem 1rem;
-    font-size: 2rem
-}
+    ${Media.md} {   
+        padding: 0.5rem 1rem;
+        font-size: 2rem
+    }
 `;
 
 const CloseToggle = styled.button`
@@ -84,6 +80,7 @@ const Subtitle = styled(Link)`
     margin: 10px 0;
     color: #fff;
     text-decoration: none;
+    font-family: Roboto, sans-serif;
 `;
 
 const BackButton = styled.button`
@@ -93,7 +90,7 @@ const BackButton = styled.button`
     background: transparent;
     color: #fff;
     z-index: 2;
-    @media (max-width: 767px) {   
+    ${Media.md} {   
         margin-left: -10px;
     }
 `;
@@ -103,7 +100,6 @@ const SubContent = styled.div`
 `;
 const MenuItem = (item, linkTo) => {
     const [toggle, setToggle] = useState(false);
-    console.log(item.item)
     const handleNavOpen = () => {
         setToggle(true);
     };
@@ -143,7 +139,7 @@ const NavigationMenus = ({ handleNavToggle }) => {
     return (
         <StyledMenu>
             <NavMenuLogo>
-                <img src={logoImage} />
+                <img src={logoImage} alt="logo" />
             </NavMenuLogo>
             {NavigationMenuData.map((item, index) => (
                 <StyledLink

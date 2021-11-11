@@ -10,7 +10,7 @@ export const breakpoints = {
 const Media = Object.keys(breakpoints).reduce(
   (sum, breakpoint) =>
     Object.assign(sum, {
-      [breakpoint]: `@media screen and (max-width: ${breakpoints[breakpoint]}px)`,
+      [breakpoint]: `@media screen and (min-width: ${breakpoints[breakpoint]}px)`,
     }),
   {}
 );

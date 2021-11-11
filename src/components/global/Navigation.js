@@ -21,6 +21,7 @@ const StyledToggle = styled.button`
     cursor: pointer;
     text-transform: uppercase;
     border: 0;
+    z-index: 3;
 `;
 
 const Navigation = ({ handleNavToggle }) => (

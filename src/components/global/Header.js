@@ -1,13 +1,20 @@
 import styled from "styled-components";
 import logoImage from "../../images/logo.png";
 
+const NavHeader = styled.header`
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+`;
+
 const Header = ({ logo }) => (
-  <header>
+  <NavHeader>
     {!logo && (
       <div className="logo">
-        <img src={logoImage} />
+        <img src={logoImage} alt="logo" />
       </div>
     )}
-  </header>
+  </NavHeader>
 );
 export default Header;
