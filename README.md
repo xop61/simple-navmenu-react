@@ -1,6 +1,6 @@
-# Nav menu React
+# Clone the website React
 
 
 ## Detail
 
-Nav menu like this - https://nimmobay.com/
+Homepage like this - https://nimmobay.com/
